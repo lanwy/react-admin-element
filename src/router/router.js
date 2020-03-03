@@ -30,13 +30,19 @@ import Login from '@/containers/Pages/Login';
 import ForgetPwd from '@/containers/Pages/ForgetPwd'
 import NotFound from '@/containers/NotFound';
 
-const router = [
+import myrouter from './myrouter'
+
+const routerAll = [
 	{
 		name: '首页',
 		path: '/',
 		component: Home,
 		type: 'admin-icon-liebiao'
-	},
+	}
+]
+
+const router = [
+	
 	{
 		name: '图标库',
 		path: '/Icons',
@@ -164,4 +170,7 @@ const router = [
 	}
 ];
 
-export default router;
+routerAll.push(...myrouter)
+routerAll.push(...router)
+
+export default routerAll;

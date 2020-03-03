@@ -7,6 +7,10 @@ import store from './store';
 import App from '@/containers/App'
 
 import './index.css';
+
+const { mockXHR } = require('./mock')
+mockXHR()
+
 // import * as serviceWorker from './serviceWorker';
 ReactDOM.render(<Provider {...store}><App/></Provider>, document.getElementById('root'))
 

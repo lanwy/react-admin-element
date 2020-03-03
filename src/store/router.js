@@ -2,7 +2,7 @@ import {
     observable,
     computed
 } from 'mobx';
-import routeLink from '../router/router.jsx';
+import routeLink from '../router/router';
 
 import {
     recursion

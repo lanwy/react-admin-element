@@ -19,7 +19,7 @@ class Main extends Component {
 	render() {
 		return (
 			<Layout.Row className="admin__main__container">
-				<Layout.Col style={{ flex: '0 0 240px', height: '100%' }}>
+				<Layout.Col className="lanwy_menu" style={{ flex: '0 0 240px', overflowX: 'hidden', overflowY: 'scroll' }}>
 					<SideMenu />
 				</Layout.Col>
 				<Layout.Col style={{ flex: 'auto', overflowX: 'hidden', overflowY: 'scroll' }}>

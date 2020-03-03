@@ -6,7 +6,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Menu } from 'element-react';
 import { inject, observer } from 'mobx-react';
-
 import './style.scss';
 
 @inject('router')
@@ -18,9 +17,7 @@ class SideMenu extends Component {
 				<Layout.Col className="admin__sidemenu__contanier__item">
 					<Menu
 						defaultActive={this.props.router.defaultActive}
-						className="admin__sidemenu__contaniner__menu"
-						theme="dark"
-					>
+						theme="dark">
 						<div className="admin__sidemenu__contaniner__menu__logo">logo</div>
 						{this.recursion(this.props.router.routerArr)}
 					</Menu>
